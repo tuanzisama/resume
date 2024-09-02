@@ -1,0 +1,13 @@
+// 主题主色调 - theme primary color
+$primary-color: #4bbc80;
+$hyperlink-color: #6cb28d;
+$codebox-bgcolor: #e9f9f0;
+$border-color: #d7f1eb;
+
+// 注入至页面中 - Inject to page
+:root {
+  --tzr-primary-color: #{$primary-color};
+  --tzr-hyperlink-color: #{$hyperlink-color};
+  --tzr-codebox-bgcolor: #{$codebox-bgcolor};
+  --tzr-border-color: #{$border-color};
+}

@@ -1,0 +1,27 @@
+{
+  "name": "resume-v3",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --force --host",
+    "build": "vue-tsc --noEmit --skipLibCheck && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@types/markdown-it": "^13.0.4",
+    "animate.css": "^4.1.1",
+    "markdown-it": "^13.0.2",
+    "reset.css": "^2.0.2",
+    "scss": "^0.2.4",
+    "vue": "^3.3.4",
+    "xss": "^1.0.14"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "sass": "^1.69.4",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vue-tsc": "^1.8.5"
+  }
+}
