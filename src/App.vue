@@ -50,7 +50,8 @@
     </tzr-box>
     <tzr-box title="技能卡片" icon="box">
       <div class="skills-card-wrapper">
-        <div class="skill-card" v-for="(skill, index) in profile.skills" :key="index">
+        <div class="skill-card" :class="{ 'skill-card-full': isSkillOdd(index) }"
+          v-for="(skill, index) in profile.skills" :key="index">
           <p class="skill-info">
             <span class="skill-info__name">{{ skill.name }}</span>
             <span class="skill-info__comment">{{ skill.comment }}</span>
@@ -70,6 +71,35 @@ import TzrAvatar from "./components/TzrAvatar.vue";
 import { TzrTimeline, TzrTimelineItem } from "./components/tzr-timeline";
 import TzrContentRenderer from "./components/TzrContentRenderer.vue";
 import TzrActionRunner from "./components/TzrActionRunner.vue";
+
+let skillFullIndex = 0
+
+const isSkillOdd = (index: number) => {
+  const skills = profile.skills
+  const skillsLength = skills.length
+
+  // 判断 fit 是否存在
+  const currentSkill = skills[index];
+  if (currentSkill.fit === 'full') {
+    skillFullIndex = index + 1
+    return true
+  }
+  // 判断下一个是否为 full,并且是否为奇数
+  const nextSkill = skills[index + 1];
+  if (nextSkill && nextSkill.fit === 'full' && isOdd((index + 1) - skillFullIndex)) {
+    return true
+  }
+  // 判断当前是否为最后一个元素，并且为奇数
+  if (index === skillsLength - 1 && isOdd((index + 1) - skillFullIndex)) {
+    return true
+  }
+  return false
+}
+
+// 判断奇数偶数
+const isOdd = (index: number) => {
+  return index % 2 !== 0
+}
 </script>
 
 <style lang="scss" scoped></style>
