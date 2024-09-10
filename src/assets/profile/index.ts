@@ -139,6 +139,7 @@ export const profile: Profile = {
       comment: "Front-End Develop",
       icons: ["html", "css", "javascript"],
       contentType: "markdown",
+      fit: "full",
       content:
         "- 编写语义化的 HTML，模块化的 CSS，完成复杂的布局\n- 熟悉 Less/SCSS 等 CSS 预处理器、编写 CSS 过渡、动画效果\n- 熟悉 Pug(Jade) HTML 模板引擎\n- 对前端的多设备、新/旧式浏览器的兼容有一定经验",
     },
@@ -170,7 +171,6 @@ export const profile: Profile = {
       name: "UI/UX 设计",
       comment: "UI/UX Design",
       icons: ["figma", "sketch", "adobe"],
-      fit: "full",
       contentType: "markdown",
       content:
         "- 使用 Figma 和 Sketch 进行界面设计和原型制作\n- 了解用户体验设计原则，能够进行用户研究和测试\n- 熟悉 Adobe Creative Suite，包括 Photoshop 和 Illustrator\n- 设计响应式布局，确保在各种设备上的用户体验",

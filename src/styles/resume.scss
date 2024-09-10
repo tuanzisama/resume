@@ -144,10 +144,6 @@
     // border-radius: 8px;
 
     @include common-box;
-    // &:nth-child(odd):last-child {
-    //   flex-basis: 100% !important;
-    //   margin-bottom: 0 !important;
-    // }
     .skill-info {
       display: flex;
       align-items: flex-end;
@@ -167,7 +163,6 @@
     }
   }
   .skill-card-full {
-    flex-basis: 100% !important;
-    // margin-bottom: 0 !important;
+    flex-basis: 100%;
   }
 }

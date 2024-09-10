@@ -72,25 +72,24 @@ import { TzrTimeline, TzrTimelineItem } from "./components/tzr-timeline";
 import TzrContentRenderer from "./components/TzrContentRenderer.vue";
 import TzrActionRunner from "./components/TzrActionRunner.vue";
 
-let skillFullIndex = 0
-
+let skillFullIndex: number = 0
 const isSkillOdd = (index: number) => {
   const skills = profile.skills
   const skillsLength = skills.length
-
-  // 判断 fit 是否存在
+  // 判断当前 fit 是否存在
   const currentSkill = skills[index];
-  if (currentSkill.fit === 'full') {
+  if (currentSkill && currentSkill.fit === 'full') {
     skillFullIndex = index + 1
     return true
   }
-  // 判断下一个是否为 full,并且是否为奇数
+  // 判断下一个是否为 full,并且当前是否为奇数
   const nextSkill = skills[index + 1];
-  if (nextSkill && nextSkill.fit === 'full' && isOdd((index + 1) - skillFullIndex)) {
+  let isOddIndex = (index + 1) - skillFullIndex
+  if (nextSkill && nextSkill.fit === 'full' && isOdd(isOddIndex)) {
     return true
   }
   // 判断当前是否为最后一个元素，并且为奇数
-  if (index === skillsLength - 1 && isOdd((index + 1) - skillFullIndex)) {
+  if (index === skillsLength - 1 && isOdd(isOddIndex)) {
     return true
   }
   return false
