@@ -50,7 +50,8 @@
     </tzr-box>
     <tzr-box title="技能卡片" icon="box">
       <div class="skills-card-wrapper">
-        <div class="skill-card" v-for="(skill, index) in profile.skills" :key="index">
+        <div class="skill-card" :class="{ 'skill-card-full': profile.skills[index].fit }"
+          v-for="(skill, index) in profile.skills" :key="index">
           <p class="skill-info">
             <span class="skill-info__name">{{ skill.name }}</span>
             <span class="skill-info__comment">{{ skill.comment }}</span>

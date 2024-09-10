@@ -115,19 +115,22 @@ export const profile: Profile = {
       name: "weather-dashboard",
       contentType: "html",
       origin: "https://github.com/example/weather-dashboard",
-      content: "<p>一个基于 React 的天气仪表盘应用，支持全球多个城市的实时天气数据查询和可视化。</p>",
+      content:
+        "<p>一个基于 React 的天气仪表盘应用，支持全球多个城市的实时天气数据查询和可视化。</p>",
     },
     {
       name: "task-manager",
       contentType: "markdown",
       origin: "https://github.com/example/task-manager",
-      content: "一个用 Node.js 开发的任务管理工具，支持任务创建、编辑、删除和完成状态更新。",
+      content:
+        "一个用 Node.js 开发的任务管理工具，支持任务创建、编辑、删除和完成状态更新。",
     },
     {
       name: "photo-gallery",
       contentType: "html",
       origin: "https://github.com/example/photo-gallery",
-      content: "<p>一个用 Angular 开发的照片库应用，支持照片上传、分类和浏览。</p>",
+      content:
+        "<p>一个用 Angular 开发的照片库应用，支持照片上传、分类和浏览。</p>",
     },
   ],
   skills: [
@@ -167,6 +170,7 @@ export const profile: Profile = {
       name: "UI/UX 设计",
       comment: "UI/UX Design",
       icons: ["figma", "sketch", "adobe"],
+      fit: "full",
       contentType: "markdown",
       content:
         "- 使用 Figma 和 Sketch 进行界面设计和原型制作\n- 了解用户体验设计原则，能够进行用户研究和测试\n- 熟悉 Adobe Creative Suite，包括 Photoshop 和 Illustrator\n- 设计响应式布局，确保在各种设备上的用户体验",
