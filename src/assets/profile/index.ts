@@ -115,19 +115,22 @@ export const profile: Profile = {
       name: "weather-dashboard",
       contentType: "html",
       origin: "https://github.com/example/weather-dashboard",
-      content: "<p>一个基于 React 的天气仪表盘应用，支持全球多个城市的实时天气数据查询和可视化。</p>",
+      content:
+        "<p>一个基于 React 的天气仪表盘应用，支持全球多个城市的实时天气数据查询和可视化。</p>",
     },
     {
       name: "task-manager",
       contentType: "markdown",
       origin: "https://github.com/example/task-manager",
-      content: "一个用 Node.js 开发的任务管理工具，支持任务创建、编辑、删除和完成状态更新。",
+      content:
+        "一个用 Node.js 开发的任务管理工具，支持任务创建、编辑、删除和完成状态更新。",
     },
     {
       name: "photo-gallery",
       contentType: "html",
       origin: "https://github.com/example/photo-gallery",
-      content: "<p>一个用 Angular 开发的照片库应用，支持照片上传、分类和浏览。</p>",
+      content:
+        "<p>一个用 Angular 开发的照片库应用，支持照片上传、分类和浏览。</p>",
     },
   ],
   skills: [
@@ -136,6 +139,7 @@ export const profile: Profile = {
       comment: "Front-End Develop",
       icons: ["html", "css", "javascript"],
       contentType: "markdown",
+      fit: "full",
       content:
         "- 编写语义化的 HTML，模块化的 CSS，完成复杂的布局\n- 熟悉 Less/SCSS 等 CSS 预处理器、编写 CSS 过渡、动画效果\n- 熟悉 Pug(Jade) HTML 模板引擎\n- 对前端的多设备、新/旧式浏览器的兼容有一定经验",
     },

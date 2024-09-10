@@ -97,6 +97,11 @@ interface Skill extends RichContentRender {
    * 技能图标
    */
   icons?: string[];
+  /**
+   * 所占空间
+   * @default normal
+   */
+  fit?: "normal" | "full";
 }
 
 export interface RichContentRender {
